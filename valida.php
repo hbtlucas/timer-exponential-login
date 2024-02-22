@@ -32,11 +32,14 @@
             if ($_SESSION['login_attempts'] > $max_attemps) {
 
                 $retry_time_index = count($retry_times) - 1;
-                for ($i = $max_attemps -1; $i >= 0; i--);
+                for ($i = $max_attemps -1; $i >= 0; $i--){
+
+                }
             }
         }
 
     } else {
         echo 'erro de consulta no banco de dados';
     }
+    
     ?>
